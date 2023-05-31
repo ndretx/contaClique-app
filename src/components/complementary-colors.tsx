@@ -1,0 +1,23 @@
+export const COMPLEMENTARY_COLORS = {
+    darkBlue: '#FF4500',
+    darkGreen: '#FF00FF',
+    darkRed: '#00FFFF',
+    darkOrange: '#8A2BE2',
+    darkPurple: '#FFD700',
+    darkCyan: '#DC143C',
+    darkMagenta: '#00FF00',
+    darkYellow: '#9932CC',
+    darkPink: '#32CD32',
+    darkTeal: '#FF1493',
+    darkSlateGray: '#FF69B4',
+    darkOliveGreen: '#FFA500',
+    darkSlateBlue: '#8B4513',
+    darkGoldenrod: '#4B0082',
+    darkTurquoise: '#FF6347',
+    darkSalmon: '#00BFFF',
+    darkViolet: '#ADFF2F',
+    darkOrchid: '#FF8C00',
+    darkCrimson: '#7FFF00',
+    darkSienna: '#0000FF',
+  };
+  
