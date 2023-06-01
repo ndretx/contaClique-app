@@ -25,23 +25,27 @@ export default function App() {
   };
 
   return (
-    <View style={[styles.container,{ backgroundColor }]}>
-      <Text style={[styles.text,{ color: corTexto }]}>Voce clicou </Text>
+    <View style={[styles.container, { backgroundColor }]}>
+      <Text style={[styles.text, { color: corTexto }]}>Voce clicou </Text>
       <Text style={[styles.textClique, { color: corTexto }]}>{clique} </Text>
+
       <TouchableOpacity
-        
-        style={[styles.Button, { left: 50 }, ]}
+        style={[styles.Button, { left: 50 },]}
         onPress={() => {
           setClique(clique + 1);
           alterarCorTexto();
           alterarCorFundo();
-        }}
+        }}>
 
-      >
-        <Text style={styles.textButton}>Clique !</Text>
+        <Text style={styles.textButton}> Clique !</Text>
       </TouchableOpacity>
-      <TouchableOpacity style={[styles.Button, { right: 50 }]}
-        onPress={() => { setClique(0); setCorTexto('black'); setBackgroundColor('white') }}>
+      <TouchableOpacity
+        style={[styles.Button, { right: 50 }]}
+        onPress={() => {
+          setClique(0);
+          setCorTexto('black');
+          setBackgroundColor('white')
+        }}>
         <Icon name="refresh-ccw" size={50} color="black" ></Icon>
       </TouchableOpacity>
       <StatusBar style="auto" />
@@ -68,6 +72,8 @@ const styles = StyleSheet.create({
     borderRadius: 300,
     borderColor: 'black',
     borderWidth: 4,
+    marginHorizontal: -20
+
 
   },
   textButton: {
